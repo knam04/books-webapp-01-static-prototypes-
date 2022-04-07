@@ -20,7 +20,7 @@
         }
 
         form:focus-within {
-            border-color: orange;
+            border-color: lightblue;
         }
 
         tr:hover {
@@ -73,33 +73,37 @@
         </div>
 
 
-        <div class="modal" id="stuffEdit">
+        <div class="modal" id="stuffEdit" style="background-color:rgb(113, 69, 11);">
 
             <div class="modal-content">
 
-                <h2>Edit item:</h2>
+                <h2 style="color:aliceblue">Edit item:</h2>
                 <form>
                     <div class="row">
                         <div class="input-field col s6">
-                            <label for="name">Item Name:</label>
-                            <input type="text" name="name" class="validate" data-length="32" required>
+                            <label for="name">Book Title:</label>
+                            <input type="text" name="title" class="validate" data-length="32" required>
                         </div>
                         <div class="input-field col s6">
-                            <label for="quantity">Item Quantity:</label>
-                            <input type="number" name="quantity" value=1 required>
+                            <label for="author">Author:</label>
+                            <input type="text" name="author" class="validate" data-length="32" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <label for="description">Item Description:</label>
+                            <label for="description">Description:</label>
                             <input type="text" name="description" data-length="100">
                         </div>
+                        <div class="input-field col s6">
+                            <label for="rating">Rating:</label>
+                            <input type="number" name="rating" value=1 required>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button class="btn waves-effect waves-light " type="submit"><i
+                    <div class="modal-footer" style="background-color:rgb(113, 69, 11)">
+                        <button class="btn waves-effect waves-light green darken-2" type="submit"><i
                                 class="material-icons right">send</i>Submit</button>
 
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Never Mind</a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color:rgb(255, 77, 0)">Never Mind</a>
                     </div>
                 </form>
             </div>
