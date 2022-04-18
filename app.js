@@ -7,6 +7,9 @@ const logger = require("morgan");
 //defining middleware that logs all incoming requests
 app.use(logger("dev"));
 
+// define middleware that serves static resources in the public directory
+app.use(express.static(__dirname + '/public'));
+
 // define a route for the default home page
 app.get( "/", ( req, res ) => {
     //console.log("GET /");
